@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's on your list today?</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-clr-red-01">
+        <h1 class="txt-align-c clr-white-01 bx-sdw-2-blu-ylw mrg-bl-0rem-2rem pdg-bl-3-75rem fnt-s-2-5rem">
+            Todo App
+        </h1>
+    </header>
+    <main class="flex-c-c-c">
+        <form onsubmit="return false" class="mrg-bl-0rem-3rem flex-r-c-c">
+            <input id="" type="text" placeholder="Get sh*t done!"
+                class="fnt-s-1-5rem bdr-0 bdr-r-025 pdg-bl-07rem pdg-il-07rem flex-gr-1 focus-bdr-ylw focus-bdr-ylw">
+            <button
+                class="bdr-0 bdr-r-025 bg-clr-blue-01 bx-sdw-1-red-01 fnt-s-1-5rem clr-white-01 flex-gr-0 pdg-il-07rem">
+                Add
+            </button>
+        </form>
+        <div class="mrg-bl-0rem-3rem flex-c-c-c">
+            <h2 class="fnt-s-2rem">
+                Filter & Options
+            </h2>
+            <ul>
+                <li class="ls-style-0">
+                    <input id="all" type="radio" class="focus-bdr-ylw radio-button">
+                    <label for="all" class="fnt-s-1-5rem">
+                        All
+                    </label>
+                </li>
+                <li class="ls-style-0">
+                    <input id="open" type="radio" class="focus-bdr-ylw radio-button">
+                    <label for="open" class="fnt-s-1-5rem ">
+                        Open
+                    </label>
+                </li>
+                <li class="ls-style-0">
+                    <input id="done" type="radio" class="focus-bdr-ylw radio-button">
+                    <label for="done" class="fnt-s-1-5rem">
+                        Done
+                    </label>
+                </li>
+            </ul>
+            <button
+                class="bdr-0 bdr-r-025 bg-clr-blue-01 bx-sdw-1-red-01 fnt-s-1-5rem clr-white-01 pdg-bl-05rem pdg-il-07rem">
+                Remove Done Todos
+            </button>
+        </div>
+        <div>
+            <h2 class="fnt-s-2rem">
+                Your Todos
+            </h2>
+            <ul id="new-to-dos" class="flex-c-c-c">
+                <li class="ls-style-0  bg-clr-white-01 bdr-0 bdr-r-025 focus-bdr-ylw-sdw-red">
+                    <input id="" type="checkbox" class=checkbox">
+                    <label for="" class="fnt-s-1-5rem ">
+                        Learn HTML
+                    </label>
+                </li>
+                <li class="ls-style-0 bg-clr-white-01 bdr-0 bdr-r-025 focus-bdr-ylw-sdw-red">
+                    <input id="" type="checkbox" class="checkbox">
+                    <label for="" class="fnt-s-1-5rem ">
+                        Learn CSS
+                    </label>
+                </li>
+                <li class="ls-style-0  bg-clr-white-01 bdr-0 bdr-r-025 focus-bdr-ylw-sdw-red">
+                    <input id="" type="checkbox" class="checkbox">
+                    <label for="open" class="fnt-s-1-5rem">
+                        Learn JavaScript
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
