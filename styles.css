@@ -10,10 +10,10 @@
 :root {
     --clr-red-01: hsl(346, 84%, 61%);
     --clr-yellow-01: hsl(42, 100%, 48%);
+    --clr-green-01: hsl(164, 95%, 43%);
     --clr-blue-01: hsl(195, 83%, 38%);
     --clr-blue-02: hsl(195, 83%, 16%);
     --clr-grey-01: hsl(0, 0%, 96%);
-    --clr-green-01: hsl(164, 95%, 43%);
     --clr-white-01: hsl(0, 0%, 100%);
 }
 
