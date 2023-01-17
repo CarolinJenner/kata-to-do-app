@@ -1,212 +1,203 @@
 /******** general stylings *******/
 *,
 *:before,
-*:after  {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --clr-red-01: hsl(346, 84%, 61%);
-    --clr-yellow-01: hsl(42, 100%, 48%);
-    --clr-green-01: hsl(164, 95%, 43%);
-    --clr-blue-01: hsl(195, 83%, 38%);
-    --clr-blue-02: hsl(195, 83%, 16%);
-    --clr-grey-01: hsl(0, 0%, 96%);
-    --clr-white-01: hsl(0, 0%, 100%);
+  --clr-red-01: hsl(346, 84%, 61%);
+  --clr-yellow-01: hsl(42, 100%, 48%);
+  --clr-green-01: hsl(164, 95%, 43%);
+  --clr-blue-01: hsl(195, 83%, 38%);
+  --clr-blue-02: hsl(195, 83%, 16%);
+  --clr-grey-01: hsl(0, 0%, 96%);
+  --clr-white-01: hsl(0, 0%, 100%);
 }
 
 html {
-    font-family: sans-serif;
-    font-size: 16px;
-    background-color: var(--clr-grey-01);
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: var(--clr-grey-01);
 }
 
 /******** specific stylings *******/
 
 .radio-button {
-/*****************Problem when checked/focus*****************/
-    all: unset;
-    display: inline-block;
-    flex-grow: 1;
-    width: auto;
-    background-color: white;
-    padding: 0.5rem;
-    border: 0.17rem solid var(--clr-blue-02);
-    border-radius: 50%;
+  /*****************Problem when checked/focus*****************/
+  all: unset;
+  display: inline-block;
+  flex-grow: 1;
+  width: auto;
+  background-color: white;
+  padding: 0.5rem;
+  border: 0.17rem solid var(--clr-blue-02);
+  border-radius: 50%;
 }
 
 .radio-button:checked {
-    background-color: var(--clr-blue-01);
-  }
-  
+  background-color: var(--clr-blue-01);
+}
+
 .radio-button:focus {
-    border: 0.1rem solid var(--clr-yellow-01);
-  }
+  border: 0.1rem solid var(--clr-yellow-01);
+}
 
 /******** utilities *******/
 /**sizes**/
 .max-width-400px {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .h-w-1rem {
-    height: 1rem;
-    width: 1rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .mrg-bl-0rem-2rem {
-    margin-block: 0 2rem;
+  margin-block: 0 2rem;
 }
 
 .mrg-bl-0rem-3rem {
-    margin-block: 0 3rem;
+  margin-block: 0 3rem;
 }
 
 .pdg-bl-3-75rem {
-    padding-block: 3.75rem;
+  padding-block: 3.75rem;
 }
 
 .pdg-bl-07rem {
-    padding-block: .7rem;
+  padding-block: 0.7rem;
 }
 
 .pdg-bl-05rem {
-    padding-block: .5rem;
+  padding-block: 0.5rem;
 }
 
 .pdg-il-07rem {
-    padding-inline: .7rem;
+  padding-inline: 0.7rem;
 }
 
 .pdg-l-1rem {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 /**font**/
 .txt-align-c {
-    text-align: center;
+  text-align: center;
 }
 
 .fnt-s-1-5rem {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .fnt-s-2rem {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .fnt-s-2-5rem {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 /**colors**/
 .clr-white-01 {
-    color: var(--clr-white-01);
+  color: var(--clr-white-01);
 }
 
 .clr-green-01 {
-    color: var(--clr-green-01);
- }
+  color: var(--clr-green-01);
+}
 
 /**bg-colors**/
 .bg-clr-red-01 {
-   background-color: var(--clr-red-01); 
+  background-color: var(--clr-red-01);
 }
 
 .bg-clr-blue-01 {
-    background-color: var(--clr-blue-01); 
- }
+  background-color: var(--clr-blue-01);
+}
 
- .bg-clr-white-01 {
-    background-color: var(--clr-white-01); 
- }
+.bg-clr-white-01 {
+  background-color: var(--clr-white-01);
+}
 
 /**shadows**/
 .bx-sdw-1-red-01 {
-    box-shadow: 2px 2px 1px 1px var(--clr-red-01);   
+  box-shadow: 2px 2px 1px 1px var(--clr-red-01);
 }
 
 .bx-sdw-2-blu-ylw {
-    text-shadow: 3px 3px 0 var(--clr-blue-01), 5px 5px 0 var(--clr-yellow-01);
+  text-shadow: 3px 3px 0 var(--clr-blue-01), 5px 5px 0 var(--clr-yellow-01);
 }
 
 /**borders**/
 .bdr-0 {
-    border: none;
+  border: none;
 }
 
 .bdr-r-025 {
-    border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .ol {
-    outline: var(--clr-blue-02);    
+  outline: var(--clr-blue-02);
 }
 
 /**flex**/
 .flex-c-c-c {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    gap: 1rem;
+  gap: 1rem;
 }
 
 .flex-c {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    gap: 1rem;
+  gap: 1rem;
 }
 
 .flex-r-c-c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
 }
 
 .flex-r-fs-c {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    
-    gap: rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  gap: rem;
 }
 
 .flex-gr-1 {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .flex-gr-0 {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 /**attributes**/
 .ls-style-0 {
-    list-style: none;
+  list-style: none;
 }
 
 .focus-bdr-ylw:focus {
-    outline: .15rem solid var(--clr-yellow-01);
+  outline: 0.15rem solid var(--clr-yellow-01);
 }
 
 .focus-bdr-ylw-sdw-red:focus {
-    border: .25rem solid var(--clr-yellow-01);
-    box-shadow: 2px 2px 1px 1px var(--clr-red-01);   
+  border: 0.25rem solid var(--clr-yellow-01);
+  box-shadow: 2px 2px 1px 1px var(--clr-red-01);
 }
-
-/*****************Problem when checked*****************/
-/*.checkbox:checked {
-    background-color: var(--green);
-    background-image: url(<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-  </svg>);
-  }*/
